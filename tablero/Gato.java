@@ -8,7 +8,8 @@ public class Gato{
 //Atributos
 	String[][] tablero = {{".",".","."},{".",".","."},{".",".","."}};
 	public int jugador=0;
-	public boolean win = true;
+	public boolean full = false;
+	
 
 
 //Metodos
@@ -48,37 +49,93 @@ public class Gato{
 	public void fill_X(int pos){
 		switch(pos){
 			case 1:
+				if(tablero[0][0] != "O"){
 				tablero[0][0] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 		
 			case 2:
+				if(tablero[0][1] != "O"){
 				tablero[0][1] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 3:
+				if(tablero[0][2] != "O"){
 				tablero[0][2] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 4:
+				if(tablero[1][0] != "O"){
 				tablero[1][0] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
+
 			case 5:
+				if(tablero[1][1] != "O"){
 				tablero[1][1] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 6:
+				if(tablero[1][2] != "O"){
 				tablero[1][2] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
+
 			case 7:
+				if(tablero[2][0] != "O"){
 				tablero[2][0] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 8:
+				if(tablero[2][1] != "O"){
 				tablero[2][1] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 9:
+				if(tablero[2][2] != "O"){
 				tablero[2][2] = "X";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 		}
 
@@ -86,38 +143,95 @@ public class Gato{
 
 	public void fill_O(int pos){
 		switch(pos){
+			
 			case 1:
+				if(tablero[0][0] != "X"){
 				tablero[0][0] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 		
 			case 2:
+				if(tablero[0][1] != "X"){
 				tablero[0][1] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
-			
+
 			case 3:
+				if(tablero[0][2] != "X"){
 				tablero[0][2] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 4:
+				if(tablero[1][0] != "X"){
 				tablero[1][0] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
+
 			case 5:
+				if(tablero[1][1] != "X"){
 				tablero[1][1] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 6:
+				if(tablero[1][2] != "X"){
 				tablero[1][2] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
+
 			case 7:
+				if(tablero[2][0] != "X"){
 				tablero[2][0] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 8:
+				if(tablero[2][1] != "X"){
 				tablero[2][1] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 
 			case 9:
+				if(tablero[2][2] != "X"){
 				tablero[2][2] = "O";
+				full = false;
+				} else {
+				System.out.println("El espacio esta ocupado");
+				full = true;
+			}
 			break;
 		}
 
@@ -222,10 +336,7 @@ public class Gato{
 		}
 
 		
-
-		
-
-		
+		return false;	
 	}
 
 
